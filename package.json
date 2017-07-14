@@ -1,0 +1,23 @@
+{
+    "name": "nightmare-test",
+    "version": "1.0.0",
+    "homepage": "https://github.com/eq-inc/nightmare-test",
+    "license": "Apache-2.0",
+    "author": "Kazuma Fujimaki <fujimaki@eq-inc.jp>",
+    "main": "test.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/eq-inc/nightmaree-test.git"
+    },
+    "scripts": {
+        "test": "xvfb-run --server-args='-screen 0 1024x768x24' ./node_modules/.bin/mocha --no-timeouts ./test.js"
+    },
+    "dependencies": {
+        "expect.js": "^0.3.1",
+        "mocha": "^3.4.2",
+        "nightmare": "^2.10.0"
+    },
+    "engines": {
+        "node": ">=7.6.0"
+    }
+}
